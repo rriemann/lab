@@ -273,7 +273,7 @@ With these steps, you can have Nextcloud notification emails with both DKIM and 
 - call :bash:`uberspace records list` and make sure all MX and TXT records are set in the DNS for your custom domain. The TXT records enable DKIM and SPF.
 - add a new mailbox to send notifications with :bash:`uberspace mail user add no-repy` (here, no-reply will be the mailbox) – remember the password
 - go to <https://webmail.uberspace.de>, login with `no-reply@custom-domain` and your password, find the option menu and configure a sieve filter to reject all incoming emails
-- go to your nextcloud admin interface, switch from `sendmail` to `smtp`, disable SSL, use port 587, set the mailbox and custom domain, set the username (whole email address) and the password, and then test email sending.
+- go to your nextcloud admin interface, switch from `sendmail` to `smtp`, disable SSL, use port 587, set the mailbox and custom domain, set the username (whole email address) and the password, and then test email sending. Check <https://manual.uberspace.de/mail-access/?highlight=smtp#smtp> for more details on SMTP.
 
 Memcaching
 ----------
